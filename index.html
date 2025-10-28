@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Fonts-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style-small.css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="styles/style-medium.css" media="screen and (min-width: 701px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/style-large.css" media="screen and (min-width: 1025px)">
+
     <title>Zatrzymaj Mobbing</title>
 </head>
 <body>
-    <nav aria-label="nawigacja">
+    <nav aria-label="nawigacja" id="nav">
         <a href="index.html">
             <img src="images/stopMobbing-logo.png" alt="Stop-mobbing logo">
         </a>
         <ul>
-            <li><a href="#joinTheProgram-section">Zatrzymaj Mobbing</a></li>
+            <li><a style="text-decoration: underline;" href="#joinTheProgram-section">Zatrzymaj Mobbing</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
@@ -83,26 +86,21 @@
                 <h2>Zmiany w kodeksie pracy</h2>
             </div>
             <div class="codexChanges-container">
-                <button><</button>
+                <button class="change-left"><</button>
                 <article id="codex-article">
                     <h2>Ochrona przed niekorzystnym traktowaniem</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, at deleniti assumenda suscipit, quibusdam amet vel possimus esse porro cupiditate reprehenderit error ex nulla eaque atque illo? Laboriosam, earum nobis?</p>
                 </article>
-                <button>></button>
+                <button class="change-right">></button>
             </div>
         </section>
         <section class="about-section">
             <div class="about-nav">
-                <button>O mnie</button>
-                <button>Najczęściej zadawane pytania</button>
-                <button>Umów się na bezpłatną wizytę</button>
+                <button id="about-me" style="background-color: #BB0003;">O mnie</button>
+                <button id="about-faq">Najczęściej zadawane pytania</button>
+                <a>Umów się na bezpłatną wizytę</a>
             </div>
             <div id="about-content">
-                <div class="about-me">
-                    <img src="images/me-picture.png" alt="moje zdjecie">
-                    <h3>O mnie -</h3>
-                    <p>Psycholog, Trener i Konsultant Biznesu. Od wielu lat wnikliwie analizuję potrzeby przedsiębiorców, pomagam usprawniać procesy sprzedaży. Doradzam, jak połączyć jakość pracy z krótkim czasem realizacji zamówień, a także jak wykorzystać potencjał pracowników. Łączę analizę psychologiczną z przystępną formą przekazu informacji. Wiedza i techniki, które przekazuję, bazują na kilkunastoletniej praktyce i wymiernych sukcesach sprzedażowych. Zaufało mi już ponad 700 firm! Wyróżnia mnie wykorzystanie wiedzy psychologicznej w realizowanych dla klientów procesach. Trenerów i konsultantów biznesowych jest wielu ale ukończenie jednej z najlepszych w Polsce uczelni psychologicznej (SWPS) oraz dodatkowe wykształcenie z zakresu trenerstwa biznesowego daje mi unikalne kompetencje w tworzeniu programów rozwoju firm. Serdecznie zapraszam Państwa do zapoznania się z moją ofertą. Wiem, że wspólnie rozwiążemy każdy problem.</p>
-                </div>
             </div>
         </section>
     </main>
@@ -119,13 +117,16 @@
             <p>535 505 500</p>
         </div>
         <ul>
-            <li><a href="#joinTheProgram-section">Powrot na początek</a></li>
-            <li><a href="blog.html">O mnie</a></li>
-            <li><a href="contact.html">Kodeks pracy</a></li>
-            <li><a href="contact.html">Stop Mobbing</a></li>
+            <li><a href="#about-content">O mnie</a></li>
+            <li><a href="#codex-article">Kodeks pracy</a></li>
+            <li><a href="#joinTheProgram-section">Stop Mobbing</a></li>
+            <li><a href="#nav">Powrot na początek</a></li>
         </ul>
         <p class="copyright-p">Copyright © 2025. Designed by Deal IT</p>
     </footer>
-    <script src="scrollEffect.js" type="module"></script>
+    <script src="src/main.js" type="module"></script>
+    <script src="src/scrollEffect.js" type="module"></script>
+    <script src="src/codex.js" type="module"></script>
+    <script src="src/about.js" type="module"></script>
 </body>
 </html>

@@ -10,4 +10,25 @@ const carouselElements =
     `,
 ]
 
-document.getElementById("codex-article")
+let codex = document.getElementById("codex-article");
+let index = 0;
+
+document.querySelector(".change-left").addEventListener('click', () => changeElement(-1))
+document.querySelector(".change-right").addEventListener('click', () => changeElement(1))
+
+changeElement(0);
+function changeElement(num)
+{
+    index += num;
+    if(index > carouselElements.length - 1)
+    {
+        index = 0
+    }
+    if(index < 0)
+    {
+        index = carouselElements.length - 1;
+    }
+
+
+    codex.innerHTML = carouselElements[index];
+}
