@@ -15,12 +15,12 @@
 }
 .joinTheProgram-banner > h2
 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: red;
 }
 .joinTheProgram-banner > p
 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 500;
     position: relative;
     top: 5px;
@@ -105,57 +105,18 @@
 {
    .joinTheProgram-banner
     {
+        font-size: 1.4rem;
         padding: 20px;
-    }
-    .joinTheProgram-banner > h2
-    {
-        font-size: 2.2rem;
-    }
-    .joinTheProgram-banner > p
-    {
-        font-size: 1.5rem;
     }
 
     /*Co zyskujesz*/
     .joinTheProgram-container
     {
         width: 80%;
-    }
-    .joinTheProgram-container > h3
-    {
-        font-size: 1.7rem;
-    }
-    .joinTheProgram-container .main-list > li
-    {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
 @media only screen and (min-width: 1024px)
 {
-    .joinTheProgram-banner
-    {
-        padding: 20px;
-    }
-    .joinTheProgram-banner > h2
-    {
-        font-size: 2.5rem;
-    }
-    .joinTheProgram-banner > p
-    {
-        font-size: 2rem;
-    }
 
-    /*Co zyskujesz*/
-    .joinTheProgram-container
-    {
-        width: 60%;
-    }
-    .joinTheProgram-container > h3
-    {
-        font-size: 1.7rem;
-    }
-    .joinTheProgram-container .main-list > li
-    {
-        font-size: 1.7em;
-    } 
 }

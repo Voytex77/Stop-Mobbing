@@ -11,16 +11,16 @@
 }
 .about-nav > * {
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
     font-weight: 600;
     font-size: 1.1rem;
-    padding: 10px;
-    color: white;
+    color: black;
     border: none;
-    background-color: red;
+    background-color: var(--primary-yellow-color);
     cursor: pointer;
-    text-align: center;
 }
 .about-nav > *:first-child {
     border-right: 1px solid white;
@@ -53,6 +53,7 @@
     min-height: 500px;
 }
 .faq li {
+    cursor: pointer;
     padding-top: 5px;
     border-bottom: 1px solid;
 }
@@ -66,7 +67,7 @@
     font-size: 2rem;
     height: 100%;
     vertical-align: middle;
-    color: var(--primary-blue-color);
+    color: var(--primary-red-color);
 }
 .faq p {
     overflow-y: scroll;
@@ -84,7 +85,7 @@
 }
 @media only screen and (min-width: 700px) {
     .about-section {
-        max-width: 90%;
+        max-width: 80%;
     }
     /* O mnie */
     .about-me h3 {

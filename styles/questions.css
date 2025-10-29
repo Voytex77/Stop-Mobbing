@@ -1,9 +1,15 @@
 .questions-list-wrapper
 {
-    background-image: url("../images/question-mark.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    align-items: center;
+    translate: 15%;
+}
+.questions-list-wrapper img
+{
+    display: none;
+    width: 30%;
+    height: fit-content;
+    translate: -50%;
 }
 .questions-list-wrapper ul
 {
@@ -17,7 +23,8 @@
 }
 .questions-list-wrapper li
 {
-    font-weight: 700;
+    text-align: left;
+    font-weight: 500;
     border-bottom: 1px solid;
     margin-top: 20px;
     padding-bottom: 10px;
@@ -37,10 +44,14 @@
     {
         width: 70%;
     }
-
-    .questions-list-wrapper li
+    .questions-list-wrapper img
     {
-        font-size: 1.5em;
+        display: block;
+    }
+
+    .questions-list-wrapper
+    {
+        font-size: 1.1rem;
     }
 }
 @media only screen and (min-width: 1024px)
@@ -50,8 +61,8 @@
         width: 60%;
     }
 
-    .questions-list-wrapper li
+    .questions-list-wrapper
     {
-        font-size: 1.9rem;
+        font-size: 1.2rem;
     }
 }

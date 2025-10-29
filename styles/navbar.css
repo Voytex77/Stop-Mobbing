@@ -2,16 +2,33 @@
 
 nav
 {
+    position:sticky;
+    top: 0;
+    z-index: 3;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--primary-yellow-color);
     box-shadow: 0px 0px 10px 0px gray;
+    transform: scale(1);
+    transition: font-size 0.5s ease;
 }
 nav img
 {
-    padding: 20px;
+    transition: width 1s ease;
+}
+nav.scrolled
+{
+  font-size: 0.7rem;
+}
+nav.scrolled img
+{
+    width: 100px;
+}
+nav img
+{
+    padding: 10px 20px;
     width: 200px;
 }
 nav ul
@@ -32,9 +49,8 @@ nav li
 nav li a
 {
     color: black;
-    text-decoration: none;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 500;
 }
@@ -45,12 +61,18 @@ nav li a
 {
     nav
     {
-        padding: 0;
+        font-size: 1rem;
         flex-direction: row;
+        padding: 20px 0;
+    }
+    nav.scrolled
+    {
+        font-size: 0.8em;
     }
     nav img
     {
         width: 150px;
+        padding: 0 40px;
     }
     nav > a
     {
@@ -71,7 +93,6 @@ nav li a
     nav li a
     {
         border-top: none;
-        font-size: 1.5rem;
     }
 }
 
@@ -79,13 +100,8 @@ nav li a
 
 @media only screen and (min-width: 1024px)
 {
-    nav li a
-    {
-        font-size: 2rem;
-    }
     nav img
     {
-        width: 200px;
-        padding: 20px 40px;
+        width: 180px;
     }
 }
