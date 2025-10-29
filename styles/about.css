@@ -1,336 +1,175 @@
+.about-section {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px gray;
+}
+.about-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.about-nav > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+    text-align: center;
+}
+.about-nav > *:first-child {
+    border-right: 1px solid white;
+}
+.about-nav > *:last-child {
+    border-left: 1px solid white;
+}
+.about-me {
+    background-image: url(../images/about.png);
+    background-size: cover;
+    padding: 15px;
+}
+.about-me h3 {
+    font-size: 1.4em;
+    padding: 10px 0;
+    color: red;
+}
+.about-me p {
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+}
+.about-me > img {
+    width: 100%;
+    max-height: 500px;
+}
 
-
-
-@media only screen and (max-width: 700px)
+.faq {
+    list-style: none;
+    padding: 15px;
+    min-height: 500px;
+}
+.faq li {
+    padding-top: 5px;
+    border-bottom: 1px solid;
+}
+.faq div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+.faq span {
+    font-size: 2rem;
+    height: 100%;
+    vertical-align: middle;
+    color: var(--primary-blue-color);
+}
+.faq p {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 0px;
+    font-size: 0.9rem;
+    transition: max-height 1.5s ease;
+    padding: 0px 15px 0;
+    border-bottom: none;
+}
+.faq p.show
 {
-    .about-section
+    max-height: 500px;
+    padding-bottom: 10px;
+}
+@media only screen and (min-width: 700px) {
+    .about-section {
+        max-width: 90%;
+    }
+    /* O mnie */
+    .about-me h3 {
+        font-size: 1em;
+    }
+    .about-me 
     {
-        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0px 0px 10px 0px gray;
-    }
-    .about-nav
-    {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .about-nav > *
-    {
-        font-size: 1.1rem;
-        padding: 10px 5px;
-        color: white;
-        border: none;
-        background-color: red;
-        cursor: pointer;
-        text-align: center;
-    }
-    .about-nav > *:first-child
-    {
-        border-right: 1px solid white;
-    }
-    .about-nav > *:last-child
-    {
-        border-left: 1px solid white;
-    }
-    .about-me{
-        background-image: url(../images/about.png);
-        background-size: cover;
-        padding: 15px;
-    }
-    .about-me > h3
-    {
-        font-size: 1.4em;
-        padding: 10px 0;
-        color: red;
-        transition: 1.5s ease;
-        translate: 50%;
-    }
-    .about-me > p
-    {
-        font-weight: 500;
-        backdrop-filter: blur(5px);
     }
     .about-me > img
     {
-        width: 100%;
-        transition: 1.5s ease;
+        max-width: 50%;
     }
-
-    .faq
+    .about-me > div
     {
-        list-style: none;
-        padding: 15px;
+        padding-left: 20px;
     }
-    .faq li
+    .about-me h3
     {
-        padding-top: 5px;
-        border-bottom: 1px solid;
+        font-size: 1.6em;
     }
-    .faq div
-    {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 5px;
-    } 
-    .faq span
-    {
-        font-size: 2rem;
-        height: 100%;
-        vertical-align: middle;
-        color: var(--primary-blue-color);
+    .about-me p {
+        font-size: 1em;
     }
-    .faq p
-    {
-        overflow-y:scroll;
-        overflow-x: hidden;
-        max-height: 0px;
-        font-size: 0.9rem;
-        transition: max-height 1.5s ease;
-        padding: 0px 15px 0;
+    .faq h4 {
+        font-size: 1.5em;
     }
-    .faq p.show
-    {
-        max-height: 300px;
-        opacity: 1;
-        padding: 5px 15px 15px;
+    .faq p {
+        font-size: 1.2em;
     }
 }
-@media only screen and (min-width: 700px)
-{
-    .about-section
-    {
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0px 0px 10px 0px gray;
+@media only screen and (min-width: 1024px) {
+    .about-section {
         max-width: 80%;
     }
-    .about-nav
-    {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .about-nav > *
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        font-weight: 600;
-        padding: 10px 5px;
-        color: white;
-        border: none;
-        background-color: red;
-        cursor: pointer;
-        text-align: center;
-    }
-    .about-nav > *:first-child
-    {
-        border-right: 1px solid white;
-    }
-    .about-nav > *:last-child
-    {
-        border-left: 1px solid white;
-    }
-
-    /* O mnie */
-
-    .about-me{
-        display: flex;
-        align-items: center;
-        background-image: url(../images/about.png);
-        background-size: cover;
-        padding: 15px;
+    .about-me {
+        flex-direction: row;
     }
     .about-me div
     {
-        padding-left: 20px;
-        border-left: 1px solid gray;
+        border-left: 1px solid black;
+    }
+    .about-nav {
+        width: 100%;
+    }
+    .about-nav > * {
         font-size: 1.5rem;
     }
-    .about-me h3
-    {
-        font-size: 1em;
-        padding: 10px 0;
-        color: red;
-    }
-    .about-me p
-    {
-        font-size: 0.7em;
-        font-weight: 500;
-        backdrop-filter: blur(5px);
-    }
-    .about-me > img
-    {
+    .about-me > img {
         padding-right: 20px;
         width: 33%;
-        height:fit-content;
-        transition: 1.5s ease;
+        height: fit-content;
+    }
+    .about-me h3 {
+        font-size: 1.5em;
+    }
+    .about-me p {
+        font-size: 1.3em;
     }
 
-    .faq
-    {
-        list-style: none;
-        padding: 15px;
+    /* O mnie */
+    .about-me > img {
+        padding-right: 20px;
+        width: 33%;
     }
-    .faq li
-    {
-        padding-top: 5px;
-        border-bottom: 1px solid;
-    }
-    .faq div
-    {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 5px;
-    } 
-    .faq span
-    {
-        font-size: 2rem;
-        height: 100%;
-        vertical-align: middle;
-        color: var(--primary-blue-color);
-    }
-    .faq h4
-    {
+    .faq h4 {
         font-size: 1.5rem;
+        font-weight: 500;
     }
-    .faq p
-    {
-        overflow:scroll;
-        max-height: 0px;
-        font-size: 1.3rem;
-        transition: max-height 1.5s ease;
-        padding: 0px 15px 0;
-    }
-    .faq p.show
-    {
-        max-height: 300px;
-        opacity: 1;
-        padding: 5px 15px 15px;
+    .faq p {
+        font-size: 1.5rem;
     }
 }
-@media only screen and (min-width: 1024px)
-{
-    .about-section
-    {
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0px 0px 10px 0px gray;
-        max-width: 60%;
-    }
-    .about-nav
-    {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media only screen and (min-width: 1600px) {
     .about-nav > *
     {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        font-weight: 600;
-        padding: 10px 5px;
-        color: white;
-        border: none;
-        background-color: red;
-        cursor: pointer;
-        text-align: center;
-    }
-    .about-nav > *:first-child
-    {
-        border-right: 1px solid white;
-    }
-    .about-nav > *:last-child
-    {
-        border-left: 1px solid white;
-    }
-
-    /* O mnie */
-
-    .about-me{
-        display: flex;
-        align-items: center;
-        background-image: url(../images/about.png);
-        background-size: cover;
-        padding: 15px;
-    }
-    .about-me div
-    {
-        padding-left: 20px;
-        border-left: 1px solid gray;
         font-size: 1.5rem;
     }
-    .about-me h3
-    {
-        font-size: 1em;
-        padding: 10px 0;
-        color: red;
+    .about-me h3 {
+        font-size: 1.5em;
     }
-    .about-me p
-    {
-        font-size: 0.7em;
-        font-weight: 500;
-        backdrop-filter: blur(5px);
-    }
-    .about-me > img
-    {
-        padding-right: 20px;
-        width: 33%;
-        height:fit-content;
-        transition: 1.5s ease;
+    .about-me p {
+        font-size: 1.3em;
     }
 
-    .faq
-    {
-        list-style: none;
-        padding: 15px;
-    }
-    .faq li
-    {
-        padding-top: 5px;
-        border-bottom: 1px solid;
-    }
-    .faq div
-    {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 5px;
-    } 
-    .faq span
-    {
-        font-size: 2rem;
-        height: 100%;
-        vertical-align: middle;
-        color: var(--primary-blue-color);
-    }
-    .faq h4
-    {
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-    .faq p
-    {
-        overflow:scroll;
-        max-height: 0px;
-        font-size: 1.2rem;
-        transition: max-height 1.5s ease;
-        padding: 0px 15px 0;
-    }
-    .faq p.show
-    {
-        max-height: 300px;
-        opacity: 1;
-        padding: 5px 15px 15px;
-    }
 }

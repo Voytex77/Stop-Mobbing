@@ -8,7 +8,7 @@ aboutMeBtn.addEventListener('click', () => {
 })
 const about_me = `
     <div class="about-me">
-        <img src="${window.innerWidth > 700 ? "./images/me-picture-portrait.jpg" : "./images/me-picture-horizontal.png"}" alt="moje zdjecie">
+        <img src="${window.innerWidth > 1024 ? "./images/me-picture-portrait.jpg" : "./images/me-picture-horizontal.png"}" alt="moje zdjecie">
         <div>
             <h3>O mnie -</h3>
             <p>Psycholog, Trener i Konsultant Biznesu. Od wielu lat wnikliwie analizuję potrzeby przedsiębiorców, pomagam usprawniać procesy sprzedaży. Doradzam, jak połączyć jakość pracy z krótkim czasem realizacji zamówień, a także jak wykorzystać potencjał pracowników. Łączę analizę psychologiczną z przystępną formą przekazu informacji. Wiedza i techniki, które przekazuję, bazują na kilkunastoletniej praktyce i wymiernych sukcesach sprzedażowych. Zaufało mi już ponad 700 firm! Wyróżnia mnie wykorzystanie wiedzy psychologicznej w realizowanych dla klientów procesach. Trenerów i konsultantów biznesowych jest wielu ale ukończenie jednej z najlepszych w Polsce uczelni psychologicznej (SWPS) oraz dodatkowe wykształcenie z zakresu trenerstwa biznesowego daje mi unikalne kompetencje w tworzeniu programów rozwoju firm. Serdecznie zapraszam Państwa do zapoznania się z moją ofertą. Wiem, że wspólnie rozwiążemy każdy problem.</p>
@@ -21,7 +21,7 @@ window.addEventListener("resize", () =>
     let image = document.querySelector(".about-me img")
     if(image != null)
     {
-        image.src = window.innerWidth > 700 ? "./images/me-picture-portrait.jpg" : "./images/me-picture-horizontal.png"
+        image.src = window.innerWidth > 1024 ? "./images/me-picture-portrait.jpg" : "./images/me-picture-horizontal.png"
     }
 });
 
