@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /*Czcionka: League Gothic*/
-
+@import url('navbar.css');
 
 :root{
     --primary-yellow-color: #FFAA00;
@@ -26,41 +26,6 @@ body
 /*telefony*/
 
 /*Nav*/
-nav
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--primary-yellow-color);
-    box-shadow: 0px 0px 10px 0px gray;
-}
-nav img
-{
-    padding: 20px;
-    width: 200px;
-}
-nav li a
-{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
-}
-nav > ul
-{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-nav > ul li
-{
-    padding: 10px 0px;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid;
-}
 
 /*Main*/
 main

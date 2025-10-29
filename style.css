@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/*Czcionka: League Gothic*/
+
+@import url("./styles/navbar.css");
+@import url("./styles/questions.css");
+@import url("./styles/joinTheProgram.css");
+@import url("./styles/codex.css");
+@import url("./styles/about.css");
+@import url("./styles/footer.css");
+
+
+:root{
+    --primary-yellow-color: #FFAA00;
+    --primary-background-color: #1B152F;
+    --primary-red-color: red;
+    --primary-blue-color: #4442A1;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: white;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/*Strzalka*/
+.arrow-section
+{
+    display: flex;
+    justify-content: center;
+}
+.arrow-section > img
+{
+    height: 200px;
+    width: auto;
+}

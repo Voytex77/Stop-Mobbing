@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /*Czcionka: League Gothic*/
-
+@import url('navbar.css');
 
 :root{
     --primary-yellow-color: #FFAA00;
@@ -26,34 +26,6 @@ body
 /*telefony*/
 
 /*Nav*/
-nav
-{
-    display: flex;
-    align-items: center;
-    background-color: var(--primary-yellow-color);
-    box-shadow: 0px 0px 10px 0px gray;
-}
-nav img
-{
-    padding: 20px;
-    width: 200px;
-}
-nav > ul
-{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-nav li a
-{
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
-}
 /*Main*/
 main
 {
@@ -66,14 +38,14 @@ section
 {
     display: flex;
     justify-content: center;
-    margin: 40px 0;
+    margin: 80px 0;
 }
 
 
 /*Zagwozdki*/
 .questions-list-wrapper
 {
-    width: 70%;
+    width: 60%;
     background-image: url("../images/question-mark.png");
     background-size:contain;
     background-repeat: no-repeat;
@@ -94,7 +66,7 @@ section
 .questions-list-wrapper li
 {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.7rem;
     border-bottom: 1px solid;
     padding-bottom: 10px;
     margin-top: 20px;
@@ -156,7 +128,7 @@ section
 /*Co zyskujesz*/
 .joinTheProgram-container
 {
-    width: 80%;
+    width: 60%;
     margin-top: 20px;
 }
 .joinTheProgram-container > h3
@@ -259,7 +231,7 @@ section
 #codex-article
 {
     margin: 20px 0;
-    max-width: 60%;
+    max-width: 50%;
     padding: 15px;
     box-shadow: 0px 0px 10px 0px gray;
 }
@@ -287,6 +259,7 @@ section
 }
 .codexChanges-container p
 {
+    padding-top: 10px;
     font-size: 1.2rem;
 }
 
@@ -394,12 +367,13 @@ section
 .faq h4
 {
     font-size: 1.5rem;
+    font-weight: 500;
 }
 .faq p
 {
     overflow:scroll;
     max-height: 0px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: max-height 1.5s ease;
     padding: 0px 15px 0;
 }

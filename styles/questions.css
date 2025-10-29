@@ -1,0 +1,116 @@
+@media only screen and (max-width: 700px)
+{
+    .questions-list-wrapper
+    {
+        background-image: url("../images/question-mark.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .questions-list-wrapper ul
+    {
+        text-align: center;
+        padding: 40px 20px;
+        list-style: none;
+    }
+    .questions-list-wrapper li:first-child
+    {
+        margin-top: 0;
+    }
+
+    .questions-list-wrapper li
+    {
+        font-weight: 700;
+        font-size: 1.2em;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        opacity: 0;
+        transition: 2s ease;
+    }
+    .questions-list-wrapper li.show
+    {
+        opacity: 1;
+        transform: 0;
+        translate: 0;
+    }
+}
+@media only screen and (min-width: 700px)
+{
+    .questions-list-wrapper
+    {
+        width: 70%;
+        background-image: url("../images/question-mark.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .questions-list-wrapper ul
+    {
+        text-align: center;
+        padding: 40px 20px;
+        list-style: none;
+    }
+    .questions-list-wrapper li:first-child
+    {
+        margin-top: 0;
+    }
+
+    .questions-list-wrapper li
+    {
+        font-weight: 700;
+        font-size: 1.5em;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        opacity: 0;
+        transition: 2s ease;
+    }
+    .questions-list-wrapper li.show
+    {
+        opacity: 1;
+        transform: 0;
+        translate: 0;
+    }
+}
+@media only screen and (min-width: 1024px)
+{
+    .questions-list-wrapper
+    {
+        width: 60%;
+        background-image: url("../images/question-mark.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .questions-list-wrapper ul
+    {
+        text-align: center;
+        padding: 40px 20px;
+        list-style: none;
+    }
+    .questions-list-wrapper li:first-child
+    {
+        margin-top: 0;
+    }
+
+    .questions-list-wrapper li
+    {
+        font-weight: 700;
+        font-size: 1.7rem;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        opacity: 0;
+        transition: 2s ease;
+    }
+    .questions-list-wrapper li.show
+    {
+        opacity: 1;
+        transform: 0;
+        translate: 0;
+    }
+}
