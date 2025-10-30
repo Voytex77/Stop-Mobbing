@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /*Czcionka: League Gothic*/
 
+@import url("./styles/navbar.css");
+@import url("./styles/questions.css");
+@import url("./styles/joinTheProgram.css");
+@import url("./styles/codex.css");
+@import url("./styles/about.css");
+@import url("./styles/footer.css");
+
 
 :root{
     --primary-yellow-color: #FFAA00;
     --primary-background-color: #1B152F;
     --primary-red-color: red;
+    --primary-blue-color: #4442A1;
 }
 
 *{
@@ -20,87 +28,27 @@ html
 
 body
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
 }
-/*telefony*/
 
-/*Nav*/
-nav
+main
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--primary-yellow-color);
-    box-shadow: 0px 0px 10px 0px gray;
-}
-nav img
-{
-    padding: 20px;
-    width: 200px;
-}
-nav li a
-{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
-}
-nav > ul
-{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-nav > ul li
-{
-    padding: 10px 0px;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid;
 }
 
-/*Main*/
 section
 {
     display: flex;
     justify-content: center;
-    margin: 40px 0;
-}
-
-
-/*Zagwozdki*/
-.questions-list-wrapper
-{
-    background-image: url("./images/question-mark.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.questions-list-wrapper ul
-{
-    text-align: center;
-    padding: 40px 20px;
-    list-style: none;
-}
-.questions-list-wrapper li:first-child
-{
-    margin-top: 0;
-}
-
-.questions-list-wrapper li
-{
-    font-weight: 700;
-    font-size: 1.2em;
-    border-bottom: 1px solid;
-    padding-bottom: 10px;
-    margin-top: 20px;
+    margin: 50px 0;
 }
 
 /*Strzalka*/
-
 .arrow-section
 {
     display: flex;
@@ -112,184 +60,9 @@ section
     width: auto;
 }
 
-
-/*Przystąp do programu*/
-/*Banner*/
-.joinTheProgram-section
+@media only screen and (min-width: 1600px)
 {
-    flex-direction: column;
-    align-items: center;
-}
-
-.joinTheProgram-banner
-{
-    text-align: center;
-    background-color: #FFAA00;
-    padding: 15px;
-    border-radius: 7px;
-    border: 3px solid black;
-    width: fit-content;
-}
-.joinTheProgram-banner > h2
-{
-    font-size: 1.5rem;
-    color: red;
-}
-.joinTheProgram-banner > p
-{
-    font-size: 1.2rem;
-    font-weight: 500;
-    position: relative;
-    top: 5px;
-}
-
-/*Co zyskujesz*/
-.joinTheProgram-container
-{
-    width: 100%;
-    margin-top: 20px;
-}
-.joinTheProgram-container > h3
-{
-    position: relative;
-    z-index: 1;
-    width: fit-content;
-    padding: 10px 20px;
-    color: white;
-    background-color: red;
-}
-
-.joinTheProgram-container .main-list
-{
-    list-style: none;
-    position: relative;
-    padding: 0 10px;
-    box-shadow: 0px 0px 10px 0px gray;
-    z-index: 0;
-
-    background: url("images/joinTheProgram-bg.png");
-    background-size: cover;
-    background-position: center;
-}
-.joinTheProgram-container .main-list > li
-{
-    font-size: 1.3em;
-    font-weight: 600;
-    padding: 20px 0px;
-    border-bottom: 1px solid;
-}
-.joinTheProgram-container .main-list > li:last-child
-{
-    padding: 20px 0px;
-    border: none;
-}
-.joinTheProgram-container .main-list .plus-sign
-{
-    height: 20px;   
-}
-.joinTheProgram-container .main-list li > div
-{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-.joinTheProgram-container .sublist
-{
-    font-size: 1em;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    padding-left: 50px;
-}
-
-/*Zmiany w kodeksie*/
-.codexChanges-section
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.codexChanges-banner
-{
-    text-align: center;
-    background-color: #FFAA00;
-    padding: 15px;
-    border-radius: 7px;
-    border: 3px solid black;
-    width: fit-content;
-}
-.codexChanges-banner > h2
-{
-    font-size: 1.4em;
-}
-
-.codexChanges-container
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.codexChanges-container > div
-{
-    margin: 20px 0;
-    max-width: 70%;
-    padding: 15px;
-    box-shadow: 0px 0px 10px 0px gray;
-}
-
-.codexChanges-container > div h2
-{
-    font-size: 1.2em;
-}
-
-
-
-/*Stopka*/
-footer
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--primary-yellow-color);
-    box-shadow: 0px 0px 10px 0px gray;
-}
-footer img
-{
-    padding: 20px;
-    width: 200px;
-}
-footer > div
-{
-    margin: 10px 0;
-    text-align: center;
-}
-footer ul
-{
-    margin: 20px 0;
-    text-align: start;
-    list-style: none;
-}
-footer ul li
-{
-    padding: 5px 0;
-}
-footer ul a
-{
-    color: black;
-}
-footer .copyright-p
-{
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid;
-}
-@media(min-width: 750px)
-{
-
-}
-@media(min-width: 1200px)
-{
-
+    main{
+        max-width: 70%;
+    }
 }
