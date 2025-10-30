@@ -2,7 +2,6 @@
 {
     display: flex;
     align-items: center;
-    translate: 15%;
 }
 .questions-list-wrapper img
 {
@@ -43,6 +42,7 @@
     .questions-list-wrapper
     {
         width: 70%;
+        translate: 15%;
     }
     .questions-list-wrapper img
     {
